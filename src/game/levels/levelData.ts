@@ -63,10 +63,10 @@ function scatterCollectibles(
 
 const level1: LevelConfig = {
   key: 'level1',
-  name: 'Garden Entrance',
+  name: 'Rainforest Atrium',
   width: 2400,
   height: 600,
-  bgColor: 0xffe9c7,
+  bgColor: 0xcfe8c0,
   playerStart: { x: 80, y: 300 },
   goal: { x: 2300, y: 260 },
   platforms: [
@@ -88,10 +88,10 @@ const level1: LevelConfig = {
 
 const level2: LevelConfig = {
   key: 'level2',
-  name: 'Grand Hall',
+  name: 'Emerald Forest Maze',
   width: 3000,
   height: 640,
-  bgColor: 0xf7d9e3,
+  bgColor: 0x8fcbb3,
   playerStart: { x: 80, y: 320 },
   goal: { x: 2900, y: 280 },
   platforms: [
@@ -121,10 +121,10 @@ const level2: LevelConfig = {
 
 const level3: LevelConfig = {
   key: 'level3',
-  name: 'Throne Room',
+  name: 'Great Banyan Tree Canopy',
   width: 3600,
   height: 700,
-  bgColor: 0x8f6bb3,
+  bgColor: 0x3a5a40,
   playerStart: { x: 80, y: 340 },
   goal: { x: 3500, y: 300 },
   platforms: [

@@ -19,7 +19,7 @@ export class GameOverScene extends Phaser.Scene {
 
   create() {
     const { width, height } = this.scale;
-    this.cameras.main.setBackgroundColor('#1b1330');
+    this.cameras.main.setBackgroundColor('#12201a');
 
     this.add
       .text(width / 2, height * 0.3, 'Caught in a Web!', {

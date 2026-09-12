@@ -54,7 +54,7 @@ export class GameScene extends Phaser.Scene {
     this.cameras.main.setBackgroundColor(level.bgColor);
 
     this.add
-      .tileSprite(0, 0, level.width, level.height, 'palace-bg')
+      .tileSprite(0, 0, level.width, level.height, 'rainforest-bg')
       .setOrigin(0, 0)
       .setScrollFactor(0.3);
 
@@ -110,20 +110,29 @@ export class GameScene extends Phaser.Scene {
   }
 
   private buildHUD() {
+    const hudStyle = { stroke: '#1b1330', strokeThickness: 4 };
     this.scoreText = this.add
-      .text(16, 12, 'Score: 0', { fontSize: '18px', color: '#3a2b52', fontStyle: 'bold' })
+      .text(16, 12, 'Score: 0', {
+        fontSize: '18px',
+        color: '#ffffff',
+        fontStyle: 'bold',
+        ...hudStyle,
+      })
       .setScrollFactor(0);
     this.pollenText = this.add
       .text(16, 36, `Pollen: 0/${this.totalCollectibles}`, {
         fontSize: '14px',
-        color: '#3a2b52',
+        color: '#ffffff',
+        ...hudStyle,
+        strokeThickness: 3,
       })
       .setScrollFactor(0);
     this.add
       .text(this.scale.width / 2, 12, this.level.name, {
         fontSize: '18px',
-        color: '#3a2b52',
+        color: '#ffffff',
         fontStyle: 'bold',
+        ...hudStyle,
       })
       .setOrigin(0.5, 0)
       .setScrollFactor(0);
@@ -131,7 +140,12 @@ export class GameScene extends Phaser.Scene {
     this.hearts = [];
     for (let i = 0; i < 3; i++) {
       const heart = this.add
-        .text(this.scale.width - 100 + i * 28, 12, '❤', { fontSize: '22px', color: '#ff6fae' })
+        .text(this.scale.width - 100 + i * 28, 12, '❤', {
+          fontSize: '22px',
+          color: '#ff6fae',
+          stroke: '#1b1330',
+          strokeThickness: 3,
+        })
         .setScrollFactor(0);
       this.hearts.push(heart);
     }

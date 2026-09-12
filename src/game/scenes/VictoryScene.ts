@@ -17,20 +17,22 @@ export class VictoryScene extends Phaser.Scene {
 
   create() {
     const { width, height } = this.scale;
-    this.cameras.main.setBackgroundColor('#8f6bb3');
+    this.cameras.main.setBackgroundColor('#2f5233');
 
     this.add
-      .tileSprite(0, 0, width, height, 'palace-bg')
+      .tileSprite(0, 0, width, height, 'rainforest-bg')
       .setOrigin(0, 0)
       .setAlpha(0.5);
 
     this.add
-      .text(width / 2, height * 0.24, '👑 You reached the Throne Room!', {
+      .text(width / 2, height * 0.24, '🌳 You reached the Banyan Tree Canopy!', {
         fontSize: '28px',
-        color: '#3a2b52',
+        color: '#ffffff',
         fontStyle: 'bold',
         align: 'center',
         wordWrap: { width: width * 0.8 },
+        stroke: '#12201a',
+        strokeThickness: 4,
       })
       .setOrigin(0.5);
 

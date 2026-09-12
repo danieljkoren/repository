@@ -20,7 +20,7 @@ export class LevelCompleteScene extends Phaser.Scene {
 
   create() {
     const { width, height } = this.scale;
-    this.cameras.main.setBackgroundColor('#2f2447');
+    this.cameras.main.setBackgroundColor('#1f3324');
 
     this.add
       .text(width / 2, height * 0.3, `${this.payload.levelName} Complete!`, {

@@ -7,10 +7,10 @@ export class MenuScene extends Phaser.Scene {
 
   create() {
     const { width, height } = this.scale;
-    this.cameras.main.setBackgroundColor('#2f2447');
+    this.cameras.main.setBackgroundColor('#1f3324');
 
     this.add
-      .tileSprite(0, 0, width, height, 'palace-bg')
+      .tileSprite(0, 0, width, height, 'rainforest-bg')
       .setOrigin(0, 0);
 
     this.add
@@ -22,9 +22,9 @@ export class MenuScene extends Phaser.Scene {
       .setOrigin(0.5);
 
     this.add
-      .text(width / 2, height * 0.34, 'A flying adventure through the royal gardens', {
+      .text(width / 2, height * 0.34, 'A flying adventure through the rainforest aviary', {
         fontSize: '18px',
-        color: '#c9b8dd',
+        color: '#d7f0c9',
       })
       .setOrigin(0.5);
 
@@ -50,7 +50,7 @@ export class MenuScene extends Phaser.Scene {
         width / 2,
         height * 0.68,
         'Arrow Keys / WASD to fly\nAvoid spiders & blades • Collect pollen • Reach the flower portal',
-        { fontSize: '15px', color: '#c9b8dd', align: 'center' },
+        { fontSize: '15px', color: '#d7f0c9', align: 'center' },
       )
       .setOrigin(0.5);
 
