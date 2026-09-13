@@ -156,4 +156,7 @@ const level3: LevelConfig = {
   collectibles: scatterCollectibles(15, 220, 3450, 180, 560),
 };
 
-export const LEVELS: LevelConfig[] = [level1, level2, level3];
+// Order follows the real building's visitor flow: enter through the domed
+// Rainforest Atrium, pass through the central Great Banyan Tree rotunda,
+// then out into the Emerald Forest conservatory/maze wing.
+export const LEVELS: LevelConfig[] = [level1, level3, level2];
