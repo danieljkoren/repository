@@ -1,9 +1,9 @@
-import { PhaserGame } from './game/PhaserGame';
+import { ThreeApp } from './three/ThreeApp';
 
 function App() {
   return (
     <div className="app-shell">
-      <PhaserGame />
+      <ThreeApp />
     </div>
   );
 }
